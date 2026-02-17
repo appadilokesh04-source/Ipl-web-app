@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ipl web website</title>
+</head>
+<body>
+<h1> Team vs Team</h1>
+<form action="teamvteam" method="GET">
+    <select name="Team1"></select>
+    <label>Selct Team 1</label>
+        <select>
+            {% for item in teams %}
+             <option>{{ item }}</option>
+            {% endfor %} 
+
+            </select><br><br>
+            <select name="Team2"></select>
+            <label>Selct Team 2</label>
+        <select>
+             {% for item in teams %}
+             <option>{{ item }}</option>
+            {% endfor %} 
+
+        </select><br><br>
+        <input type="Submit" value="Find track record">
+        
+    
+</form>
+    
+</body>
+</html>
